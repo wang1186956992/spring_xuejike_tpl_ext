@@ -1,4 +1,4 @@
 .layui-layer-iframe {
-    width: 100%;
-    max-width: 900px;
+    width: 100%  !important;;
+    max-width: 900px  !important;;
 }
