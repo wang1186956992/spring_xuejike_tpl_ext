@@ -1,4 +1,8 @@
-.layui-layer-iframe {
-    width: 100%  !important;
-    max-width: 900px  !important;
+
+
+
+@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .layui-layer-iframe {
+        width: 100%  !important;
+    }
 }
