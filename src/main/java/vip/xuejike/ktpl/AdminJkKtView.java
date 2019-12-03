@@ -34,6 +34,7 @@ public class AdminJkKtView extends JkKtView {
     @Data
     public static class AdminInfo{
         private String title;
+        private String logoHtml;
         private String indexUrl;
         private String welcomeUrl;
         private String logoutUrl;

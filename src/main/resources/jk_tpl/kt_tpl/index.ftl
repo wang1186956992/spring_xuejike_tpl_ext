@@ -14,7 +14,7 @@
     <div class="layui-header my-header">
         <a href="${info.indexUrl!"index.html"}">
             <!--<img class="my-header-logo" src="" alt="logo">-->
-            <div class="my-header-logo">${info.title!"必答后台模板"}</div>
+            <div class="my-header-logo">${info.logoHtml!"必答后台模板"}</div>
         </a>
         <div class="my-header-btn">
             <button class="layui-btn layui-btn-small btn-nav">
