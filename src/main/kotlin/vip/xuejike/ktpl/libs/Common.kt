@@ -443,7 +443,6 @@ fun FlowContent.jkButton(title:String="按钮",
                     map["lay-filter"]="ajax_submit"
                 }
                 "reset"->{
-                    map["lay-submit"]="";
                     map["lay-filter"]="reset_submit"
 //                    this.type=ButtonType.reset
                 }
