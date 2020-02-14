@@ -98,6 +98,7 @@ function resetForm(formObj) {
         .val('')
         .removeAttr('checked')
         .removeAttr('checked');
+    layui.form.render();
 }
 var lastCloseNowTime=new Date().getTime();
 function closeNow() {

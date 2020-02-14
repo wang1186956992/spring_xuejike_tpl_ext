@@ -147,8 +147,9 @@ layui.use(['form'], function(){
     form.on('submit(reset_submit)',function (data) {
         setTimeout(function () {
             resetForm();
-            data.form.submit();
-        })
+            // data.form.submit();
+        });
+        return false;
     })
 });
 
