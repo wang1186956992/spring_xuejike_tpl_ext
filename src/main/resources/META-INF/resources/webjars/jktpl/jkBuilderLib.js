@@ -93,13 +93,13 @@ function ajaxDataHandle(res) {
     }
     ajaxActionHandle(res);
 }
-function resetForm(formObj) {
-    layui.$(':input',layui.$(formObj))
+function resetForm() {
+    layui.$(':input')
         .not(':button,:submit,:reset,:hidden')
         .val('')
         .removeAttr('checked')
         .removeAttr('checked');
-    layui.form.render();
+    // layui.form.render();
 }
 var lastCloseNowTime=new Date().getTime();
 function closeNow() {
@@ -173,6 +173,10 @@ function btnEvent(event) {
                     ajaxPost(url,{});
                     layer.close(index);
                 });
+                return;
+
+            case "reset":
+                resetForm();
                 return;
             default:
 
