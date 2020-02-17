@@ -39,7 +39,8 @@ function openTab(href, title) {
 
 //发送Post请求，并自动处理
 function ajaxPost(url,data) {
-    
+
+    console.log(111111 + "ajaxPost");
     // console.log(parent.layer);
 
     var index = getLayer().load(1);
@@ -72,7 +73,7 @@ function ajaxPost(url,data) {
 }
 //Ajax状态处理器
 function ajaxDataHandle(res) {
-
+    console.log(111111 + "ajaxDataHandle");
     if(res.statusCode==jkBuilderConfig.status.success){
         getLayer().msg(res.message)
         var ifs=parent.getNowTabIframe();

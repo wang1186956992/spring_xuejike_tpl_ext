@@ -147,10 +147,10 @@ layui.use(['form'], function(){
     form.on('submit(reset_submit)',function (data) {
 
         console.log(111111111111 + 'reset_submit');
-        // setTimeout(function () {
-        //     resetForm();
-        //     // data.form.submit();
-        // });
+        setTimeout(function () {
+            resetForm();
+            // data.form.submit();
+        });
         return false;
     })
 });
