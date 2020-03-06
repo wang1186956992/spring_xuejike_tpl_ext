@@ -9,6 +9,6 @@
 <link rel="stylesheet" href="${vipRoot}/vip/frame/static/css/ext.css">
 <link rel="stylesheet" href="${vipRoot}/vip/frame/static/css/formSelects-v4.css">
 <link rel="stylesheet" href="${vipRoot}/jkStyle.css">
-<link rel="icon" href="${vipRoot}/vip/frame/static/image/code.png">
+<link rel="icon" href="${vipRoot}/vip/frame/static/image/favicon(1).ico">
 <link rel="stylesheet" href="${vipRoot}/vip/frame/zijia.css">
 <link rel="stylesheet" href="${vipRoot}/vip/frame/shouye.css">
