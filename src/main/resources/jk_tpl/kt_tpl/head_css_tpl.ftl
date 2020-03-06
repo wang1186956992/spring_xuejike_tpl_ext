@@ -11,3 +11,4 @@
 <link rel="stylesheet" href="${vipRoot}/jkStyle.css">
 <link rel="icon" href="${vipRoot}/vip/frame/static/image/code.png">
 <link rel="stylesheet" href="${vipRoot}/vip/frame/zijia.css">
+<link rel="stylesheet" href="${vipRoot}/vip/frame/shouye.css">
