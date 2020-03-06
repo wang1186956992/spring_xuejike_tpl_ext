@@ -29,14 +29,14 @@
         <!-- 顶部右侧添加选项卡监听 -->
         <ul class="layui-nav my-header-user-nav" lay-filter="side-top-right">
             <#--<li class="layui-nav-item"><a href="javascript:;" class="pay" href-url="">支持作者</a></li>-->
-            <li class="layui-nav-item">
-                <a class="name" href="javascript:;"><i class="layui-icon">&#xe629;</i>主题</a>
-                <dl class="layui-nav-child">
-                    <dd data-skin="0"><a href="javascript:;">默认</a></dd>
-                    <dd data-skin="1"><a href="javascript:;">纯白</a></dd>
-                    <dd data-skin="2"><a href="javascript:;">蓝白</a></dd>
-                </dl>
-            </li>
+<#--            <li class="layui-nav-item">-->
+<#--                <a class="name" href="javascript:;"><i class="layui-icon">&#xe629;</i>主题</a>-->
+<#--                <dl class="layui-nav-child">-->
+<#--                    <dd data-skin="0"><a href="javascript:;">默认</a></dd>-->
+<#--                    <dd data-skin="1"><a href="javascript:;">纯白</a></dd>-->
+<#--                    <dd data-skin="2"><a href="javascript:;">蓝白</a></dd>-->
+<#--                </dl>-->
+<#--            </li>-->
             <li class="layui-nav-item">
                 <a class="name" href="javascript:;">
                     <img src="${vipRoot}/vip/frame/static/image/code.png" alt="logo"> ${info.username!} </a>
@@ -126,36 +126,3 @@ layui.use(['layer','vip_nav'], function () {
 </script>
 </body>
 </html>
-
-<style>
-    .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
-        background-color: #20a0ff;
-        color: #fff;
-    }
-
-    .my-header-btn .layui-btn {
-        background-color: #20a0ff;
-        color: #fff;
-    }
-
-    .layui-layout-admin .my-header {
-        background: #000000;
-    }
-
-    .layui-nav {
-        background-color: #002140;
-        color: #fff;
-    }
-
-    .my-body .layui-tab-card > .layui-tab-title li {
-        border: 5px solid #fff;
-        border-radius: 10px;
-    }
-
-    .layui-tab-card>.layui-tab-title .layui-this {
-        background-color: #20a0ff;
-    }
-    .layui-tab-title {
-        height: 50px;
-    }
-</style>
