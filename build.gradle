@@ -5,6 +5,7 @@ buildscript {
     ext.kotlin_version = '1.2.10'
 
     repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
         mavenCentral()
     }
     dependencies {
@@ -28,7 +29,7 @@ repositories {
         
      maven { url "https://jitpack.io" }
      maven { url "https://jcenter.bintray.com" }
-     maven { url "http://repo.maven.apache.org/maven2" }
+     maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
     jcenter()
 }
 dependencies {
