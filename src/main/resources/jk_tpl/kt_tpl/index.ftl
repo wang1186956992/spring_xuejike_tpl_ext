@@ -39,7 +39,7 @@
 <#--            </li>-->
             <li class="layui-nav-item">
                 <a class="name" href="javascript:;">
-                    <img src="${vipRoot}/vip/frame/static/image/code.png" alt="logo"> ${info.username!} </a>
+                    <img src="${vipRoot}/vip/frame/static/image/username.png" alt="logo"> ${info.username!} </a>
                 <dl class="layui-nav-child">
 
                     <#--<dd><a href="javascript:;" href-url="demo/login.html"><i class="layui-icon">&#xe621;</i>登录页</a></dd>-->

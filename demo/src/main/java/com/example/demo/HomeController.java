@@ -36,7 +36,7 @@ public class HomeController {
         //定义首页 初始化界面地址
         testView.getInfo().setWelcomeUrl("/welcome");
         //退出登录地址
-        testView.getInfo().setLogoutUrl("/public/logout");
+        testView.getInfo().setLogoutUrl("/admin/public/logout");
         //定义 当前登录的用户昵称
         testView.getInfo().setUsername("超级管理员");
         return testView.toHtml();
@@ -61,17 +61,17 @@ public class HomeController {
     }
 
 
-//    @RequestMapping("/top")
-//    @ResponseBody
-//    public ApiResult top() {
-//        ArrayList<Menu> list = new ArrayList<>(1);
-//        Menu menu = new Menu();
-//        menu.setText("基础功能");
-//        menu.setId(1L);
-//        menu.setIcon("");
-//        list.add(menu);
-//        return ApiResult.success(list);
-//    }
+    @RequestMapping("/top")
+    @ResponseBody
+    public ApiResult top() {
+        ArrayList<Menu> list = new ArrayList<>(1);
+        Menu menu = new Menu();
+        menu.setText("基础功能");
+        menu.setId(1L);
+        menu.setIcon("");
+        list.add(menu);
+        return new ApiResult(list);
+    }
 
     @RequestMapping("/left")
     @ResponseBody
