@@ -27,15 +27,25 @@
             width: 100%;
             height: 100%;
             margin: auto;
-            background: #f8f8f9;
+            /*background: #f8f8f9;*/
+            /*background: radial-gradient(rgba(255,255,255,.7), #99999999);;*/
+            background-image: url(${vipRoot}/vip/frame/static/image/login_bg.png);
+            background-repeat: round;
+            background-size: cover;
             -webkit-animation: animate-cloud 20s linear infinite;
             animation: animate-cloud 20s linear infinite; }
 
         .login-weaper {
+            padding: 5px;
+            background: #419eff66;
+            border-radius: 5px;
             margin: 0 auto;
             width: 1000px;
-            -webkit-box-shadow: -4px 5px 10px rgba(0, 0, 0, 0.4);
-            box-shadow: -4px 5px 10px rgba(0, 0, 0, 0.4); }
+            -webkit-box-shadow: 0px -8px 15px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px -8px 15px 0px rgba(0, 0, 0, 0.4);
+            /*-webkit-box-shadow: -4px 5px 10px rgba(0, 0, 0, 0.4);*/
+            /*box-shadow: -4px 5px 10px rgba(0, 0, 0, 0.4); */
+        }
 
         .login-left,
         .login-border {
@@ -58,13 +68,17 @@
             -webkit-box-direction: normal;
             -ms-flex-direction: column;
             flex-direction: column;
-            background-color: #409EFF;
+            background-color: #409EFF66;
             color: #fff;
             float: left;
             width: 50%;
             position: relative; }
 
         .login-left .img {
+            border-radius: 6px;
+            background: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgba(255,255,255,.7) 17px);
+            padding: 5px;
+            filter: drop-shadow(0px 0px 10px #ffffff);
             width: 140px; }
 
         .login-time {
@@ -88,10 +102,11 @@
 
         .login-border {
             border-left: none;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
+            /*border-top-right-radius: 5px;*/
+            /*border-bottom-right-radius: 5px;*/
+            border-radius: 5px;
             color: #fff;
-            background-color: #fff;
+            background-color: #fff6;
             width: 50%;
             float: left;
             -webkit-box-sizing: border-box;
@@ -192,7 +207,10 @@
             line-height: 38px;
             text-indent: 5px;
             text-align: center; }
-
+        .animatedtest {-webkit-animation-duration:1.2s;animation-duration:1.2s;}
+        .layui-input-login {
+            background-color: #fff6;
+        }
     </style>
 </head>
 <body>
@@ -205,33 +223,33 @@
             <p class="title">蚕食生活超市</p>
 <#--            <p>©2019 v2.6.4</p>-->
         </div>
-        <div class="login-border">
+        <div class="login-border  animatedtest bounceInDown">
             <div class="login-smain">
                 <div class="login-main" style="position: absolute;">
                     <#if content == "">
-                        <header class="layui-elip" style="color: #000000">${info.title!""}</header>
+                        <header class="layui-elip" style="color: ##e6f4fb; font-weight: 500;padding-bottom: 15px;">${info.title!""}</header>
                         <form class="layui-form" action="${info.actionUrl!""}" method="post">
                             <div class="layui-input-inline">
-                                <input type="text" name="username" required style="border-radius: 10px;"
+                                <input type="text" name="username" autofocus required style="border-radius: 10px;"
                                        lay-verify="required"
                                        value="${info.userName!""}"
                                        placeholder="用户名" autocomplete="off"
-                                       class="layui-input">
+                                       class="layui-input layui-input-login">
                             </div>
                             <div class="layui-input-inline">
                                 <input type="password" name="pwd" required style="border-radius: 10px;"
                                        lay-verify="required" placeholder="密码"
                                        autocomplete="off"
                                        value="${info.pwd!""}"
-                                       class="layui-input">
+                                       class="layui-input layui-input-login">
                             </div>
                             <div class="layui-inline">
                                 <span style="color: red">${info.msg!""}</span>
                             </div>
                             <div class="layui-input-inline login-btn">
-                                <button type="submit" class="layui-btn">登录</button>
+                                <button type="submit" class="layui-btn" style="background-color: #20a0ff66; box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);">登录</button>
                             </div>
-                            <hr/>
+                            <#--<hr/>-->
 
 
                         </form>

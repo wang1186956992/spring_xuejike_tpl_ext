@@ -17,8 +17,14 @@ class AdminAdminIndexView(var page: Page<Admin>, var query: Admin? = null) : Pag
                         jkInput("用户名", formItem = false
                                 , inline = true, bind = query!!::userName)
                         jkButton("搜索")
-                        jkButton("清空", type = JkButtonType.reset)
-                        jkButton("添加",type = JkButtonType.dialog,url = "/admin/admin/edit")
+                        jkButton("清空", type = JkButtonType.reset){
+                            val btn=this as BUTTON
+                            btn.classes+="layui-btn-white"
+                        }
+                        jkButton("添加",type = JkButtonType.dialog,url = "/admin/admin/edit"){
+                            val btn=this as BUTTON
+                            btn.classes+="layui-btn-add"
+                        }
                     }
                 }
             }
@@ -42,17 +48,19 @@ class AdminAdminIndexView(var page: Page<Admin>, var query: Admin? = null) : Pag
                         jkButton("编辑",type = JkButtonType.dialog
                                 ,url = "/admin/admin/edit?id=${it.id}")
 
-                        if (it.status== Status.open){
-                            jkButton(title= "禁用",url = "/admin/admin/updateStatus?id=${it.id}"
-                                    ,type = JkButtonType.confirm.name,option = "确定要禁用吗？"){
-                                val btn=this as BUTTON
-                                btn.classes+="layui-btn-danger"
+//                        if (it.status== Status.open){
+                        if (i%2==0) {
+                            jkButton(title = "禁用", url = "/admin/admin/updateStatus?id=${it.id}"
+                                    , type = JkButtonType.confirm.name, option = "确定要禁用吗？") {
+                                val btn = this as BUTTON
+                                btn.classes += "layui-btn-enter"
                             }
-                        }else if (it.status==Status.close){
+//                        }else if (it.status==Status.close){
+                        }else {
                             jkButton(title= "启用",url = "/admin/admin/updateStatus?id=${it.id}"
                                     ,type = JkButtonType.confirm.name,option = "确定要启用吗？"){
                                 val btn=this as BUTTON
-                                btn.classes+="layui-btn-danger"
+                                btn.classes+="layui-btn-enter"
                             }
                         }
                         jkButton(title = "删除",url = "/admin/admin/del?id=${it.id}",type = JkButtonType.confirm,option = "您确定要删除吗"){

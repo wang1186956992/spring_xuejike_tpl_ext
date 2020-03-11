@@ -1,6 +1,8 @@
 .layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
-    background-color: #20a0ff;
-    color: #fff;
+    /*background-color: #20a0ff;*/
+    /*color: #fff;*/
+    background-color: #333030;
+    color: #20a0ff;
 }
 
 .my-header-btn .layui-btn {
@@ -9,11 +11,15 @@
 }
 
 .layui-layout-admin .my-header {
-    background: #000000;
+    /*background: #000000;*/
+    /*background: repeating-linear-gradient(45deg, #242424, #20a0ff 47px);*/
+    background-color: #242424;
+    background-image: linear-gradient(to right, #242424, #1a8de2, #20a0ff );
 }
 
 .layui-nav {
-    background-color: #002140;
+    background-color: #242424;
+    background-image: linear-gradient(to right, #242424, #193148, #0c4067);
     color: #fff;
 }
 
@@ -24,6 +30,7 @@
 
 .layui-tab-card>.layui-tab-title .layui-this {
     background-color: #20a0ff;
+    color: #fefefe;
 }
 .layui-tab-title {
     height: 50px;

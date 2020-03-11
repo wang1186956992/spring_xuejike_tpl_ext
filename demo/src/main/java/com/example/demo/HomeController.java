@@ -80,52 +80,53 @@ public class HomeController {
 
         String json = "[\n" +
                 "    {\"name\":\"会员卡管理\",\"icon\":\"\",\"children\":[\n" +
-                "        {\"name\":\"会员卡\", \"icon\":\"\", \"url\":\"/admin/membershipCard/index\"}\n" +
+                "        {\"name\":\"会员卡\", \"icon\":\"&#xe735;\", \"url\":\"/admin/membershipCard/index\"}\n" +
+                "        {\"name\":\"測試\", \"icon\":\"&#xe62a;\", \"url\":\"/admin/admin/index\"}\n" +
                 "\n" +
                 "    ]},\n" +
                 "    {\"name\":\"商品管理\",\"icon\":\"\",\"children\":[\n" +
-                "        {\"name\":\"商品\", \"icon\":\"\", \"url\":\"/admin/goods/index\"},\n" +
-                "        {\"name\":\"无条码商品分类\", \"icon\":\"\", \"url\":\"/admin/otherGoodsType/index\"}\n" +
+                "        {\"name\":\"商品\", \"icon\":\"&#xe66e;\", \"url\":\"/admin/goods/index\"},\n" +
+                "        {\"name\":\"无条码商品分类\", \"icon\":\"&#xe857;\", \"url\":\"/admin/otherGoodsType/index\"}\n" +
                 "    ]},\n" +
                 "    {\"name\":\"门店管理\",\"icon\":\"\",\"children\":[\n" +
-                "        {\"name\":\"门店\", \"icon\":\"\", \"url\":\"/admin/store/index\"}\n" +
+                "        {\"name\":\"门店\", \"icon\":\"&#xe698;\", \"url\":\"/admin/store/index\"}\n" +
                 "    ]},\n" +
                 "    {\"name\":\"门店商品管理\",\"icon\":\"\",\"children\":[\n" +
-                "        {\"name\":\"门店商品\", \"icon\":\"\", \"url\":\"/admin/storeGoods/index\"}\n" +
+                "        {\"name\":\"门店商品\", \"icon\":\"&#xe657;\", \"url\":\"/admin/storeGoods/index\"}\n" +
                 "\n" +
                 "    ]},\n" +
                 "    {\"name\":\"订单管理\",\"icon\":\"\",\"children\":[\n" +
-                "        {\"name\":\"订单\", \"icon\":\"\", \"url\":\"/admin/order/index\"},\n" +
+                "        {\"name\":\"订单\", \"icon\":\"&#xe63c;\", \"url\":\"/admin/order/index\"},\n" +
                 "\n" +
-                "        {\"name\":\"充值\", \"icon\":\"\", \"url\":\"/admin/recharge/index\"}\n" +
+                "        {\"name\":\"充值\", \"icon\":\"&#xe65e;\", \"url\":\"/admin/recharge/index\"}\n" +
                 "\n" +
                 "    ]},\n" +
                 "    {\"name\":\"订单数据管理\",\"icon\":\"\",\"children\":[\n" +
-                "        {\"name\":\"订单统计\", \"icon\":\"\", \"url\":\"/admin/orderStatistics/index\"},\n" +
+                "        {\"name\":\"订单统计\", \"icon\":\"&#xe62c;\", \"url\":\"/admin/orderStatistics/index\"},\n" +
                 "\n" +
-                "        {\"name\":\"充值统计\", \"icon\":\"\", \"url\":\"/admin/rechargeStatistics/index\"}\n" +
+                "        {\"name\":\"充值统计\", \"icon\":\"&#xe629;\", \"url\":\"/admin/rechargeStatistics/index\"}\n" +
                 "\n" +
                 "    ]},\n" +
                 "\n" +
                 "    {\"name\":\"退款申请记录管理\",\"icon\":\"\",\"children\":[\n" +
-                "        {\"name\":\"退款申请待审核\", \"icon\":\"\", \"url\":\"/admin/orderRefundRecord/getPageBytoAudit\"},\n" +
+                "        {\"name\":\"退款申请待审核\", \"icon\":\"&#xe664;\", \"url\":\"/admin/orderRefundRecord/getPageBytoAudit\"},\n" +
                 "\n" +
-                "        {\"name\":\"退款申请已审核\", \"icon\":\"\", \"url\":\"/admin/orderRefundRecord/getPageByAudit\"}\n" +
+                "        {\"name\":\"退款申请已审核\", \"icon\":\"&#xe60c;\", \"url\":\"/admin/orderRefundRecord/getPageByAudit\"}\n" +
                 "\n" +
                 "    ]},\n" +
                 "    {\"name\":\"管理员管理\",\"icon\":\"\",\"children\":[\n" +
-                "        {\"name\":\"管理员\", \"icon\":\"\", \"url\":\"/admin/admin/index\"}\n" +
+                "        {\"name\":\"管理员\", \"icon\":\"&#xe770;\", \"url\":\"/admin/admin/index\"}\n" +
                 "\n" +
                 "    ]},\n" +
                 "    {\"name\":\"Erp同步信息管理\",\"icon\":\"\",\"children\":[\n" +
-                "        {\"name\":\"erp同步信息\", \"icon\":\"\", \"url\":\"/admin/syncErpInfoLog/index\"},\n" +
+                "        {\"name\":\"erp同步信息\", \"icon\":\"&#xe601;\", \"url\":\"/admin/syncErpInfoLog/index\"},\n" +
                 "\n" +
-                "        {\"name\":\"erp调用错误日志\", \"icon\":\"\", \"url\":\"/admin/erpErrorLog/index\"}\n" +
+                "        {\"name\":\"erp调用错误日志\", \"icon\":\"&#xe6b2;\", \"url\":\"/admin/erpErrorLog/index\"}\n" +
                 "\n" +
                 "    ]},\n" +
                 "    {\"name\":\"管理员操作\",\"icon\":\"\",\"children\":[\n" +
-                "      {\"name\":\"消息消费日志\", \"icon\":\"\", \"url\":\"/admin/mqMessageLog/index\"},\n" +
-                "      {\"name\":\"系统配置菜单\", \"icon\":\"\", \"url\":\"/admin/config/index\"}\n" +
+                "      {\"name\":\"消息消费日志\", \"icon\":\"&#xe63c;\", \"url\":\"/admin/mqMessageLog/index\"},\n" +
+                "      {\"name\":\"系统配置菜单\", \"icon\":\"&#xe716;\", \"url\":\"/admin/config/index\"}\n" +
                 "    ]}\n" +
                 "\n" +
                 "]";
