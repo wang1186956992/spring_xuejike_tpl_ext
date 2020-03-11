@@ -387,11 +387,12 @@ input[type='checkbox'] {
 
 /* skin0 */
 html .skin-0 .dblclick-tips-box .layui-layer-content {
-    background-color: #009688;
+    background-color: #1e679d;
+    border-radius: 10px;
 }
 
 html .skin-0 .dblclick-tips-box i.layui-layer-TipsB {
-    border-right-color: #009688;
+    border-right-color: #1e679d;
 }
 
 /* skin1 */
