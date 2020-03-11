@@ -39,7 +39,7 @@
     <dependency>
 	    <groupId>com.github.wang1186956992</groupId>
 	    <artifactId>spring_xuejike_tpl_ext</artifactId>
-	    <version>v1.1.2</version>
+	    <version>v1.1.3</version>
 	</dependency>
 ```
 ### 1.2.2 引入Kotlin库和插件
