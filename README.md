@@ -323,4 +323,17 @@ fun FlowContent.jkInput(title:String="",formItem:Boolean=true,placeholder:String
 }
 ```
 
+```
+ 
+ 新增样式
+ 
+ 清空：layui-btn-white  白色
+ 添加：layui-btn-add    绿色
+ 禁用/启用：layui-btn-enter  橙色
+ 
+ 
+
+
+```
+
 
